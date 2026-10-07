@@ -29,3 +29,5 @@ Current execution tools do not include browser controls or authenticated Smither
 Before deployment, review a separate design: Streamable HTTP over TLS with verified domain; per-user authentication and revocation; isolated account/checkpoint state; encryption and access controls for credentials; credential enrollment in a secure interface; bounded reads; privacy and retention policies; synthetic review accounts and operational monitoring. Retain no mail body by default. QQ IMAP still requires network TCP access to port 993; a static site or Sites hosting alone is insufficient.
 
 Do not expose a server bound to the developer's own mailbox, convert native prompts into public credential tools, deploy a daemon, or incur hosting fees as part of local bundle publication. Hosting and real multi-user verification require a separate reviewed deployment decision.
+
+Glama repository ownership metadata: root `glama.json` declares `ChuluuMGL` as maintainer using the official schema. This prepares ownership verification; it does not replace Add Server submission or prove a directory listing. See https://glama.ai/blog/2025-07-08-what-is-glamajson .
