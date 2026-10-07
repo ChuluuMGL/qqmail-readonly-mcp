@@ -19,6 +19,8 @@ The core suite blocks socket connection creation. GitHub Actions runs only offli
 
 Maintainer's local Python 3.13 run: **36 tests passed, 0 failed**; compile checks and the offline publication validator passed. The portable plugin and MCP manifests also passed validation against their official Agent Plugins 1.0.0 JSON schemas. A wheel was built and installed offline into a fresh local virtual environment; its installed stdio entrypoint successfully discovered all five tools from another working directory. These checks do not guarantee every client/platform. The maintainer's separately authorized real QQ smoke check passed TLS/login/LIST, date search, a second page, bounded MIME reads, FLAGS before/after comparison and temporary-state pending replay. Private account, message metadata, counts and reports are deliberately not distributed.
 
+The versioned ZIP was extracted to a fresh directory; package validation and relocated stdio discovery passed. ZIP contents were checked for excluded state, private reports and Git internals. Release assets include SHA-256 checksums.
+
 Public distribution changes are tested offline; the real-mail smoke result applies to the underlying IMAP core, not a complete third-party installation acceptance test.
 
 ## Not run or not implemented

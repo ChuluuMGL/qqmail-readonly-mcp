@@ -10,7 +10,7 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-yellow)](LICENSE)
 [![by Chuluu](https://img.shields.io/badge/by-Chuluu-0E5E43)](https://github.com/ChuluuMGL)
 
-[安装说明](docs/INSTALL.md) · [测试记录](TESTING.md) · [隐私说明](PRIVACY.md) · [安全边界](SECURITY.md)
+[下载发行包](https://github.com/ChuluuMGL/qqmail-readonly-mcp/releases) · [平台发布说明](docs/PUBLISHING.md) · [安装说明](docs/INSTALL.md) · [测试记录](TESTING.md) · [隐私说明](PRIVACY.md) · [安全边界](SECURITY.md)
 
 ## 它是什么
 

@@ -11,7 +11,7 @@
 [![by Chuluu](https://img.shields.io/badge/by-Chuluu-0E5E43)](https://github.com/ChuluuMGL)
 [![Read-only](https://img.shields.io/badge/IMAP-read--only-blue)](SECURITY.md)
 
-[Installation](docs/INSTALL.md) · [Testing](TESTING.md) · [Privacy](PRIVACY.md) · [Security](SECURITY.md) · [Changelog](CHANGELOG.md)
+[Downloads](https://github.com/ChuluuMGL/qqmail-readonly-mcp/releases) · [Distribution](docs/PUBLISHING.md) · [Installation](docs/INSTALL.md) · [Testing](TESTING.md) · [Privacy](PRIVACY.md) · [Security](SECURITY.md) · [Changelog](CHANGELOG.md)
 
 ## What it does
 

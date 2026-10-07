@@ -31,6 +31,8 @@ Optional package installation is `python3 -m pip install .` inside a user-contro
 
 ## Plugin bundle
 
+You may also download a versioned plugin ZIP or wheel from [GitHub Releases](https://github.com/ChuluuMGL/qqmail-readonly-mcp/releases), verify SHA256SUMS, and extract the ZIP into a directory named `qqmail-readonly-mcp`. The bundle is source code with plugin metadata; it is not an official directory installation or an MCPB installer.
+
 - `plugin.json` / `mcp.json`: Agent Plugins portable metadata and stdio server declaration.
 - `.codex-plugin/plugin.json` / `.mcp.json`: compatibility fallback.
 - `skills/qqmail-subscriptions/SKILL.md`: review workflow and untrusted-data rules.
