@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qqmail-readonly-mcp"
+version = "0.1.0"
+description = "Local-first read-only QQ Mail MCP for subscription and renewal notices"
+readme = "README.md"
+requires-python = ">=3.13"
+license = "MIT"
+license-files = ["LICENSE", "NOTICE"]
+authors = [{name = "Chuluu"}]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/ChuluuMGL/qqmail-readonly-mcp"
+Repository = "https://github.com/ChuluuMGL/qqmail-readonly-mcp"
+Issues = "https://github.com/ChuluuMGL/qqmail-readonly-mcp/issues"
+
+[project.scripts]
+qqmail-readonly-mcp = "qqmail_mcp.server:main"
+qqmail-secure-mcp = "qqmail_mcp.secure_server:main"
+
+[tool.setuptools.packages.find]
+include = ["qqmail_mcp*"]

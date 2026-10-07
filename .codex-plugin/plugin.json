@@ -1,0 +1,34 @@
+{
+  "name": "qqmail-readonly-mcp",
+  "version": "0.1.0",
+  "description": "Local-first read-only QQ Mail MCP for subscription and renewal notices.",
+  "author": {
+    "name": "Chuluu",
+    "url": "https://github.com/ChuluuMGL"
+  },
+  "homepage": "https://github.com/ChuluuMGL/qqmail-readonly-mcp",
+  "repository": "https://github.com/ChuluuMGL/qqmail-readonly-mcp",
+  "license": "MIT",
+  "keywords": [
+    "qq-mail",
+    "imap",
+    "mcp",
+    "subscriptions",
+    "read-only"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "QQ Mail Read-only",
+    "shortDescription": "Subscription and renewal notices",
+    "longDescription": "Read QQ Mail through a local stdio process with strict TLS, EXAMINE, PEEK, UID snapshot pagination and recoverable local checkpoints. Credentials belong to each user. No sending or mailbox mutation. No automatic monitoring in this version.",
+    "developerName": "Chuluu",
+    "category": "Productivity",
+    "capabilities": [
+      "Read"
+    ],
+    "websiteURL": "https://github.com/ChuluuMGL/qqmail-readonly-mcp",
+    "privacyPolicyURL": "https://github.com/ChuluuMGL/qqmail-readonly-mcp/blob/main/PRIVACY.md",
+    "supportURL": "https://github.com/ChuluuMGL/qqmail-readonly-mcp/issues"
+  }
+}

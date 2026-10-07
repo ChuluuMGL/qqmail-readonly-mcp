@@ -1,0 +1,13 @@
+.state/
+.local/
+__pycache__/
+.venv/
+*.pyc
+*.sqlite3*
+.env*
+live-verification.json
+test-results.txt
+build/
+dist/
+*.egg-info/
+.DS_Store
