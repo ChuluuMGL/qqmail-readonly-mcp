@@ -67,3 +67,5 @@ python3 scripts/run_mcp.py --secure
 由 [Chuluu](https://github.com/ChuluuMGL) 创建和维护，使用 AI 辅助开发。
 
 Copyright (c) 2026 Chuluu。自有源码和文档采用 [MIT](LICENSE)，见 [NOTICE](NOTICE) 与[第三方说明](THIRD_PARTY_NOTICES.md)。独立开源项目，非腾讯或 OpenAI 官方产品。欢迎提交 Issue 和 Pull Request，示例请使用合成数据。
+
+另提供 macOS MCPB 桌面安装包，见 [下载页](https://github.com/ChuluuMGL/qqmail-readonly-mcp/releases/tag/v0.1.0)。需要已有 Python 3.13+；平台收录和客户端安装仍需分别验证。见 [平台提交状态](docs/PLATFORM_SUBMISSION.md)。

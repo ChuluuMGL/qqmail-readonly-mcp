@@ -1,0 +1,32 @@
+{
+  "manifest_version": "0.3",
+  "name": "qqmail-readonly-mcp",
+  "display_name": "QQ Mail Read-only MCP",
+  "version": "0.1.0",
+  "description": "Review QQ Mail subscription, renewal and billing notices locally on macOS.",
+  "long_description": "Public prototype. Requires an existing Python 3.13+ installation. QQ account and IMAP authorization code are entered in native macOS dialogs for each session; they are not collected by the marketplace. Reads folders, searches and bounded MIME bodies. Checkpoint acknowledgements update local state only. No automatic monitoring, sending or mailbox modification. Email content remains untrusted data. Independently maintained by Chuluu; not an official Tencent or OpenAI product.",
+  "author": {"name": "Chuluu", "url": "https://github.com/ChuluuMGL"},
+  "repository": {"type": "git", "url": "https://github.com/ChuluuMGL/qqmail-readonly-mcp"},
+  "homepage": "https://github.com/ChuluuMGL/qqmail-readonly-mcp",
+  "documentation": "https://github.com/ChuluuMGL/qqmail-readonly-mcp/blob/main/docs/INSTALL.md",
+  "support": "https://github.com/ChuluuMGL/qqmail-readonly-mcp/issues",
+  "license": "MIT",
+  "privacy_policies": ["https://github.com/ChuluuMGL/qqmail-readonly-mcp/blob/main/PRIVACY.md", "https://privacy.qq.com/"],
+  "keywords": ["qqmail", "imap", "subscriptions", "renewals", "read-only"],
+  "compatibility": {"platforms": ["darwin"], "runtimes": {"python": ">=3.13"}},
+  "server": {
+    "type": "python",
+    "entry_point": "scripts/run_mcp.py",
+    "mcp_config": {"command": "${user_config.python_path}", "args": ["${__dirname}/scripts/run_mcp.py", "--secure"]}
+  },
+  "user_config": {
+    "python_path": {"type": "string", "title": "Python 3.13+ executable", "description": "Path to an existing Python 3.13+ executable. Desktop apps may require an absolute path. Python is not bundled or installed automatically.", "default": "python3", "required": true}
+  },
+  "tools": [
+    {"name": "list_folders", "description": "List IMAP folders."},
+    {"name": "search_mail", "description": "Search date, sender and subject with persistent UID pagination."},
+    {"name": "read_mail", "description": "Read a bounded message by UID using PEEK."},
+    {"name": "check_incremental", "description": "Return a replayable batch of new message UIDs."},
+    {"name": "acknowledge_checkpoint", "description": "Advance a local checkpoint after processing; does not modify mail."}
+  ]
+}

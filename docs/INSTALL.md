@@ -48,3 +48,11 @@ On macOS, explicitly run `python3 -m qqmail_mcp.secure_probe`. This opens local 
 ## Notifications and cloud access
 
 On-demand MCP reads are available while the process runs. Automatic reminders require separately authorized online execution, recovery scans, important-mail rules and a notification destination. IMAP IDLE and notification delivery are not implemented. Secure MCP Tunnel can bridge local MCP but needs extra permissions, runtime credentials and an online machine; it is not configured here. Sites alone cannot open ordinary raw TCP connections to QQ IMAP.
+
+## macOS MCPB bundle
+
+The additional `qqmail-readonly-mcp-0.1.0-macos.mcpb` asset is a desktop extension ZIP with an MCPB 0.3 `manifest.json`. It contains the local Python source, launcher, license and privacy documentation. It does **not** bundle or install Python. Only macOS is supported by this bundle; an existing Python 3.13+ executable is required. Set **Python 3.13+ executable** to its absolute path if your desktop app cannot find `python3`.
+
+Import the bundle into a client that supports MCPB. When the server starts, native macOS dialogs request your own QQ account and authorization code for that session. Cancel to stop. No credentials are supplied through marketplace configuration, uploaded with the bundle or persisted by this project. Keep startup approval enabled and allow time for native input; client startup timeouts vary. Actual Smithery ingestion and desktop import are not claimed until independently verified. Read [PRIVACY.md](../PRIVACY.md) before using mail tools.
+
+For developers: `python3 scripts/package_mcpb.py` creates the deterministic bundle from the explicit Git-tracked allowlist. `manifest.json` describes five tools, macOS/Python compatibility and the session-only launcher.

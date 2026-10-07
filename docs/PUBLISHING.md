@@ -27,3 +27,7 @@ Do not convert a user's local authorization code into a shared public mail servi
 - **Official MCP Registry:** stores metadata, not your source artifacts. Publishing needs a supported underlying package distribution and publisher authentication; GitHub source alone is not a registered server. This project has not been published to PyPI or that registry. See the [registry quickstart](https://modelcontextprotocol.io/registry/quickstart).
 
 Never claim a platform listing, verification badge or review acceptance before the platform confirms it. Platform submissions contain only project name, public repository, maintainer identity, MIT license, transport, capabilities and installation links. Each user supplies their own credentials locally.
+
+## Local MCPB distribution
+
+An additional macOS MCPB 0.3 bundle is prepared with `manifest.json` and `scripts/package_mcpb.py`. It requires an existing Python 3.13+ runtime and session-only native credential input. It is distinct from the portable Agent Plugins ZIP. [Smithery supports local MCPB uploads](https://smithery.ai/docs/build/publish); publication needs the maintainer's authenticated namespace. See [submission information and status](PLATFORM_SUBMISSION.md). Credentials and runtime state are excluded using an explicit allowlist; no Python runtime or persistent credential provider is bundled.

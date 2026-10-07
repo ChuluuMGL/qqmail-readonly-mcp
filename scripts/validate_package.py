@@ -38,7 +38,7 @@ def validate():
     for path in ROOT.rglob('*'):
         relative = path.relative_to(ROOT)
         if any(p in {'.git','.state','.local','__pycache__','.venv','build','dist'} or p.endswith('.egg-info') for p in relative.parts): continue
-        if not path.is_file() or path.name in ('test-results.txt','live-verification.json') or path.suffix == '.pyc': continue
+        if not path.is_file() or path.name in ('.DS_Store','test-results.txt','live-verification.json') or path.suffix == '.pyc': continue
         text = path.read_text()
         # Assemble patterns so the validator itself doesn't trip them.
         private_roots = ('/' + 'Users/', '/' + 'Library/Frameworks/', '/' + 'Volumes/')

@@ -7,3 +7,5 @@ The MCP and Agent Plugins specifications, OpenAI package documentation and Pytho
 TimeCyber/email-mcp was reviewed as a public interface reference. Its source, package, tests and dependencies were not copied, installed or executed in this project.
 
 QQ Mail/Tencent and OpenAI/Codex/ChatGPT names identify supported services or clients. This repository is independently maintained by Chuluu and implies no endorsement or affiliation.
+
+MCPB packaging follows the [Model Context Protocol MCPB specification](https://github.com/modelcontextprotocol/mcpb) (MIT). Its `@anthropic-ai/mcpb` CLI is a development validation tool only, not a runtime dependency or bundled package.

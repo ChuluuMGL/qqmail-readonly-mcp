@@ -78,3 +78,5 @@ Created and maintained by [Chuluu](https://github.com/ChuluuMGL).
 Copyright (c) 2026 Chuluu. Project source and documentation use the [MIT License](LICENSE); see [NOTICE](NOTICE) and [third-party notices](THIRD_PARTY_NOTICES.md). Built with AI-assisted coding and maintainer review. This independent project is not an official Tencent or OpenAI product.
 
 Issues and pull requests are welcome; see [contributing](CONTRIBUTING.md). Please keep all examples synthetic.
+
+A macOS MCPB desktop bundle is also available in [Releases](https://github.com/ChuluuMGL/qqmail-readonly-mcp/releases/tag/v0.1.0). It requires an existing Python 3.13+ installation. See [platform submission status](docs/PLATFORM_SUBMISSION.md). Directory acceptance and desktop-client ingestion are separate from GitHub publication.
